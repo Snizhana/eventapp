@@ -1,0 +1,95 @@
+body {
+  background-color: #16A085;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 25px; }
+
+body h1 {
+  background-color: #2ABB9B;
+  color: #2e3a4f;
+  line-height: 120px;
+  margin: 0;
+  padding: 0 10px; }
+
+body h2 {
+  margin: 35px 0;
+  text-align: center; }
+
+body h6 {
+  color: #2e3a4f;
+  font-size: 14px; }
+
+body ul {
+  margin: 0;
+  padding: 0; }
+
+body ul li {
+  list-style-type: none; }
+
+body ul li a {
+  display: block;
+  color: inherit;
+  padding: 20px 10px;
+  text-decoration: none; }
+
+body ul li a:hover {
+  background-color: #2ABB9B;
+  color: #2e3a4f; }
+
+body ul li:not(:last-child) {
+  border-bottom: 1px solid #2ABB9B; }
+
+body form {
+  margin: 90px auto;
+  max-width: 600px;
+  text-align: center; }
+
+body form .col-half {
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  width: 50%; }
+
+body form textarea, body form input {
+  background-color: #2ABB9B;
+  color: #2e3a4f;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  outline: none;
+  padding: 12px;
+  margin-bottom: 10px;
+  width: 260px; }
+
+body form textarea {
+  height: 158px; }
+
+body form input[type="file"] {
+  background: transparent;
+  padding: none; }
+
+body form button {
+  padding: 15px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid white;
+  background: transparent;
+  text-transform: uppercase;
+  margin: 20px 0;
+  width: 100%; }
+
+body form button:hover {
+  color: white;
+  background-color: #2ABB9B;
+  border: none; }
+
+@media screen and (max-width: 768px) {
+  body form .col-half {
+    text-align: inherit;
+    width: 100%; }
+  body form button {
+    width: 280px; } }
+
+/*# sourceMappingURL=Site.css.map */
+
+/*# sourceMappingURL=Site.css.map */

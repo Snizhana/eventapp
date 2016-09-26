@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>mishima</title>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'style/css/Site.css' %}" media="screen">
+<script type="text/javascript" src="{% static 'libs/angular.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/angular-ui-router.js' %}"></script>
+<script type="text/javascript" src="{% static 'libs/angular-resource.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/dist/index.js' %}"></script>
+</head>
+<body ng-app="eventapp">
+  <div class="container">
+    <ui-view></ui-view>
+    {% block content %}{% endblock content %}
+  </div>
+</body>
+</html>

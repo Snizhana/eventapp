@@ -1,0 +1,103 @@
+$green: #16A085;
+$lightgreen: #2ABB9B;
+$grey: #2e3a4f;
+
+body{
+  background-color: $green;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 25px;
+
+  h1{
+    background-color: $lightgreen;
+    color: $grey;
+    line-height: 120px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  h2{
+    margin: 35px 0;
+    text-align: center;
+  }
+  h6{
+    color: $grey;
+    font-size: 14px;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style-type: none;
+      a{
+        display: block;
+        color: inherit;
+        padding: 20px 10px;
+        text-decoration: none;
+        &:hover{
+          background-color: $lightgreen;
+          color: $grey;
+        }
+      }
+    }
+    li:not(:last-child){
+      border-bottom: 1px solid $lightgreen;
+    }
+  }
+
+  form{
+    margin: 90px auto;
+    max-width: 600px;
+    text-align: center;
+
+    .col-half{
+      float: left;
+      overflow: hidden;
+      text-align: left;
+      width: 50%;
+    }
+    textarea, input{
+        background-color: #2ABB9B;
+        color: $grey;
+        border: none;
+        border-radius: 2px;
+        font-size: 14px;
+        outline: none;
+        padding: 12px;
+        margin-bottom: 10px;
+        width: 260px;
+    }
+    textarea{
+      height: 158px;
+    }
+    input[type="file"]{
+      background: transparent;
+      padding: none;
+    }
+    button{
+      padding: 15px;
+      font-size: 16px;
+      color: white;
+      border: 1px solid white;
+      background: transparent;
+      text-transform: uppercase;
+      margin: 20px 0;
+      width: 100%;
+
+      &:hover{
+        color: white;
+        background-color: #2ABB9B;
+        border: none;
+      }
+    }
+    @media screen and (max-width: 768px){
+      .col-half{
+        text-align: inherit;
+        width: 100%;
+      }
+      button{
+        width: 280px;
+      }
+    }
+  }
+
+}

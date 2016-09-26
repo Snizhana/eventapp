@@ -1,0 +1,6 @@
+<h1>Incoming events</h1>
+<ul>
+  <li ng-repeat="event in events">
+    <a href="javascript:void(0)" ng-bind="[event.title]" ui-sref="eventDetail({id: event.id})"></a>
+  </li>
+</ul>

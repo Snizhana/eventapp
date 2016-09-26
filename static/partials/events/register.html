@@ -1,0 +1,50 @@
+<form role="form" ng-submit="register(registrationData, config)">
+  <h2 ng-bind="[event.title]"></h2>
+  <h6 ng-show="isSummitted">The request is submitted. Thanks for your interest</h6>
+  <div class="col-half">
+    <div>
+      <label for="firstName">First name</label><br>
+      <input type="text" id="firstName" ng-model="registrationData.first_name" placeholder="" />
+    </div>
+
+    <div>
+      <label for="surname">Surname</label><br>
+      <input type="text" id="surname" ng-model="registrationData.sur_name" placeholder="" />
+    </div>
+
+    <div>
+      <label for="lastName">Last name</label><br>
+      <input type="text" id="lastName" ng-model="registrationData.last_name" placeholder="" />
+    </div>
+
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" required ng-model="registrationData.mail" placeholder="" />
+    </div>
+
+    <div>
+      <label for="job">Your job</label><br>
+      <input type="text" id="job" ng-model="registrationData.job" placeholder="" />
+    </div>
+  </div>
+
+  <div class="col-half">
+    <div>
+      <label for="aboutMe">About you</label><br>
+      <textarea id="aboutMe" ng-model="registrationData.user_info" rows="8" cols="40" placeholder="" ></textarea>
+    </div>
+
+    <div>
+      <label for="sourceOptions">How did you know about event?</label><br>
+      <input type="text" id="sourceOptions" ng-model="registrationData.info_source" placeholder="" />
+    </div>
+
+    <div>
+      <label for="aboutMe">Photo</label><br>
+      <input type="file" name="file" onchange="angular.element(this).scope().uploadFile(this.files)"/>
+    </div>
+
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+
+</form>
